@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ພາສາກຶມມຸ (ສີນ 5)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .sentence-category {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border-left: 5px solid #66bb6a; /* Green border left */
+        }
+        .sentence-category h3 {
+            color: #388e3c; /* Dark green heading */
+            margin-top: 0;
+            font-size: 1.8em;
+            border-bottom: 1px dashed #a5d6a7;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .sentence-item {
+            margin-bottom: 10px;
+            padding: 8px 0;
+            border-bottom: 1px dotted #c8e6c9;
+        }
+        .sentence-item:last-child {
+            border-bottom: none;
+        }
+        .khmu-phrase {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #43a047; /* Medium green */
+        }
+        .lao-meaning {
+            font-size: 1em;
+            color: #333;
+            margin-left: 15px;
+        }
+        .category-image {
+            max-width: 150px; /* Adjust size as needed */
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ຮຽນຮູ້ພາສາກຶມມຸ (ສີນ 5)</h1>
+        <h2>ສີນ 5 ແລະ ເກມຖາມ-ຕອບ</h2>
+        <nav>
+            <ul>
+                <li><a href="#introduction">ຄຳນຳ</a></li>
+                <li><a href="#five-precepts">ສີນ 5</a></li>
+                <li><a href="#quiz">ທົດສອບຄວາມຮູ້</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction" class="container">
+            <p>ເວັບໄຊທ໌ນີ້ສ້າງຂຶ້ນມາເພື່ອຊ່ວຍໃຫ້ທ່ານຮຽນຮູ້ ແລະ ຈື່ຈຳ "ສີນ 5" ໃນພາສາກຶມມຸໄດ້ງ່າຍຂຶ້ນ, ພ້ອມດ້ວຍເກມຖາມ-ຕອບ 10 ຄຳຖາມເພື່ອທົດສອບຄວາມເຂົ້າໃຈຂອງທ່ານ!</p>
+        </section>
+
+        <section id="five-precepts" class="container">
+            <h2>ສີນ 5 (The Five Precepts)</h2>
+            <div class="sentence-category">
+                <img src="khmu-buddha.jpg" alt="ສີນ 5" class="category-image">
+                <h3>ສີນ 5 ໃນພາສາກຶມມຸ</h3>
+                <div class="sentence-item">
+                    <span class="khmu-phrase">1. ອຳພານໂຕ</span>
+                    <p class="lao-meaning">ບໍ່ຂ້າສັດ</p>
+                </div>
+                <div class="sentence-item">
+                    <span class="khmu-phrase">2. ອຳເລີຈຂອງບຽງ</span>
+                    <p class="lao-meaning">ບໍ່ລັກສັບຂອງຄົນອື່ນ</p>
+                </div>
+                <div class="sentence-item">
+                    <span class="khmu-phrase">3. ອຳຫອຍເກຼະກຶມບຼາຂອງບຽງ</span>
+                    <p class="lao-meaning">ບໍ່ຫຼີ້ນຊູ້ຜົວເມຍຄົນອື່ນ</p>
+                </div>
+                <div class="sentence-item">
+                    <span class="khmu-phrase">4. ອຳເລົ່າລາກ</span>
+                    <p class="lao-meaning">ບໍ່ເວົ້າຕົວະ</p>
+                </div>
+                <div class="sentence-item">
+                    <span class="khmu-phrase">5. ອຳເອືອກບຸຈ໌ຫຼືຂອງບາຈ໌</span>
+                    <p class="lao-meaning">ບໍ່ດື່ມສຸຣາຫຼືຂອງມືນເມົາ</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="container quiz-section">
+            <h2>ທົດສອບຄວາມຮູ້: ພາສາກຶມມຸ</h2>
+            <div id="quiz-container">
+                <p>ກົດປຸ່ມ "ເລີ່ມທົດສອບ" ເພື່ອເລີ່ມຕົ້ນ!</p>
+                <button id="start-quiz-btn">ເລີ່ມທົດສອບ</button>
+            </div>
+            <div id="quiz-results" style="display:none;">
+                <h3>ຜົນການທົດສອບ</h3>
+                <p>ຄະແນນຂອງທ່ານ: <span id="score">0</span> / <span id="total-questions">0</span></p>
+                <button id="restart-quiz-btn">ທົດສອບໃໝ່</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <p>&copy; Monk BEd Bounsong ONMANYCHAN.</p>
+      <p>&copy; ພຣະອາຈານ ປ.ຕ ບຸນຊົງ ອ່ອນມະນີຈັນ.</p>
+        <p>&copy; 2025 ຮຽນຮູ້ພາສາກຶມມຸ. ສະຫງວນລິຂະສິດ.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
