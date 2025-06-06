@@ -1,0 +1,1 @@
+# khmu-buddha.-5-precept
